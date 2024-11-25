@@ -181,11 +181,11 @@
     // Информация о металлоидах (легенда)
     function InfoMetalloid(ctx){
         ctx.lineWidth = 0;
-        ctx.strokeStyle='1f1f1f'; // цвет решетки
+        //ctx.strokeStyle='1f1f1f'; // цвет решетки
         ctx.strokeRect(485, 5, 200, 40);
-        ctx.fillStyle='000000';
+        ctx.fillStyle='#787e91';
         ctx.fillRect(495, 15, 20, 20);
-        ctx.fillStyle='black';
+        ctx.fillStyle='white';
         ctx.textAlign = 'left';
         ctx.textBaseline = 'middle';
         ctx.font = '18px sans-serif';
