@@ -183,13 +183,13 @@
         ctx.lineWidth = 0;
         ctx.strokeStyle='1f1f1f'; // цвет решетки
         ctx.strokeRect(485, 5, 200, 40);
-        ctx.fillStyle='#787e91';
+        ctx.fillStyle='000000';
         ctx.fillRect(495, 15, 20, 20);
         ctx.fillStyle='black';
         ctx.textAlign = 'left';
         ctx.textBaseline = 'middle';
         ctx.font = '18px sans-serif';
-        ctx.fillText(' - Metalloid element', 515, 25);
+        ctx.fillText(' - Металланоид', 515, 25);
         
     }
 
@@ -286,6 +286,7 @@
             Info(ctx, e, cell, '#b5b8bc', '#9ea2a8');
         }
         ctx.lineWidth = 2;
+        
         ctx.strokeStyle='1f1f1f'; // цвет решетки
         ctx.strokeRect(cell.x, cell.y, cell.dimension, cell.dimension);
 
@@ -299,6 +300,7 @@
         pt.drawCell = function(ctx, specs, cell){
             // рисуем таблицу
             draw(ctx, specs, cell);
+            
         }
     }
     pt.repaint();
